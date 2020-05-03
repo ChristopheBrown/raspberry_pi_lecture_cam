@@ -9,11 +9,11 @@ class Uploader:
     relative_path = None
     file = None
     absolute_path = None
-    keyfile = 'inteledison.pem'  # NOTE: If you get "permissions are too open" do "chmod 400 [pem file]" in terminal
-    destination_path = '/home/ec2-user/'
-    server = 'ec2-user@54.91.114.40:' + destination_path
-    gmail_sender = 'cbelinteledison@gmail.com'
-    gmail_password = 'inteledison'
+    keyfile = 'REDACTED'  # NOTE: If you get "permissions are too open" do "chmod 400 [pem file]" in terminal
+    destination_path = 'REDACTED'
+    server = 'REDACTED' + destination_path
+    gmail_sender = 'REDACTED'
+    gmail_password = 'REDACTED'
     gmail_recipients = []
 
     show_recipients = False
@@ -107,7 +107,7 @@ class Uploader:
 
 if __name__ == '__main__':
     file_to_send = 'sample.txt'
-    gmail_recipients = ['ejl2187@columbia.edu','cb3534@columbia.edu']
+    gmail_recipients = ['REDACTED']
 
     u = Uploader(file_to_send, print_emails=True)  # change to False to not print out emails when finished
     u.upload()
