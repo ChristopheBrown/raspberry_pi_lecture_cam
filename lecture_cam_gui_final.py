@@ -58,7 +58,7 @@ def take_picture():
         output = strftime(file_path + "/image%d%m%H%M.png", gmtime())
         camera.capture(output)
     if file_path != "" and save_cloud == 1:  
-        gmail_recipients = ['ejl2187@columbia.edu','cb3534@columbia.edu']
+        gmail_recipients = ['REDACTED']
         u = Uploader(output, print_emails=True)
         u.upload()
         u.email(gmail_recipients)
@@ -87,7 +87,7 @@ def stop_rec():
     timer.value = 0
     camera.stop_recording()
     if file_path != "" and save_cloud == 1:  
-        gmail_recipients = ['ejl2187@columbia.edu','cb3534@columbia.edu']
+        gmail_recipients = ['REDACTED']
         u = Uploader(output, print_emails=True)
         u.upload()
         u.email(gmail_recipients)
